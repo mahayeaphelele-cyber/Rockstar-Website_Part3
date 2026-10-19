@@ -4,6 +4,7 @@
 // Implements: Accordions, Tabs, Modals, Maps, Animations, DOM, Lightbox, Dynamic Content, Search, Games History
 // =========================================
 
+
 // 2.1 Interactive Elements - Accordions (jQuery)
 $(document).ready(function(){
   $('.accordion-header').click(function(){
