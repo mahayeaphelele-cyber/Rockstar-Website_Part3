@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /games.html
+Allow: /store.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /cart.html
+Allow: /changelog.html
+
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.log$
+
+Sitemap: https://rockstar-fan.example.com/sitemap.xml

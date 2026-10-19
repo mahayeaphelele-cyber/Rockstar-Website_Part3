@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Rockstar | Contact - Part 3 Map</title><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" /><link rel="stylesheet" href="style.css"></head><body><nav class="navbar"><div class="nav-inner"><a href="index.html" class="logo">ROCKSTAR</a><label for="nav-toggle" class="hamburger">☰</label><input type="checkbox" id="nav-toggle"><ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="games.html">Games</a></li><li><a href="store.html">Store <span class="cart-badge" id="cartCount">0</span></a></li><li><a href="contact.html">Contact</a></li><li><a href="changelog.html">Changelog</a></li><li><a href="cart.html">Cart</a></li></ul></div></nav>
+<section class="contact-page" style="text-align:center; padding:80px 24px 20px;"><h1>CONTACT US</h1><p>Part 3 - Interactive Map using Leaflet + Accordions + Animations</p><div class="response-badge"><span></span> Live • Map powered by Leaflet - OpenStreetMap dark theme</div></section>
+
+<div class="contact-wrapper">
+<div class="contact-info-cards">
+<div class="info-card"><h4>📍 Headquarters</h4><p>Rockstar Games, Broadway<br>New York, NY 10001<br>40.7128° N, 74.0060° W</p></div>
+<div class="info-card"><h4>🏠 Your Location</h4><p>Durban, KZN, 4091<br>-29.8587° S, 31.0218° E<br>Home of Aphelele Mahaye</p></div>
+<div id="map"></div>
+<p style="font-size:10px; color:#666; margin-top:8px;">Leaflet + CARTO dark tiles - Custom neon markers - Polyline Durban to NYC - Location-based feature</p>
+
+<div class="accordion" style="margin-top:20px;">
+<div class="accordion-item active"><div class="accordion-header"><h4>📧 How to contact?</h4><span>+</span></div><div class="accordion-content" style="max-height:400px; padding:18px 22px;"><p>Use form on right - includes char count, validation, toast - all DOM manipulation techniques.</p></div></div>
+<div class="accordion-item"><div class="accordion-header"><h4>🕒 Response Time</h4><span>+</span></div><div class="accordion-content"><p>Average 2 hours - badge shows live pulse animation via CSS + JS.</p></div></div>
+<div class="accordion-item"><div class="accordion-header"><h4>🗺️ Map Details (Leaflet)</h4><span>+</span></div><div class="accordion-content"><p>Map uses Leaflet 1.9.4 - Dark theme from CARTO - 3 markers: Durban home, Durban hub, NYC HQ - Custom divIcon with neon colors #00E5FF, #FFB700, #FF6A00 - Polyline with dashArray connecting continents.</p></div></div>
+</div>
+</div>
+
+<div style="background:#12121A; border:1px solid #22223A; border-radius:12px; padding:28px;">
+<div class="input-group"><label>Your Name</label><input type="text" id="name" placeholder="Enter your name" maxlength="50"><div class="char-count" id="nameCount">0 / 50</div></div>
+<div class="input-group"><label>Email</label><input type="email" id="email" placeholder="Enter your email"></div>
+<div class="input-group"><label>Message</label><textarea id="message" rows="6" placeholder="Enter your message" maxlength="300"></textarea><div class="char-count" id="msgCount">0 / 300</div></div>
+<button class="btn btn-primary" id="sendBtn" style="width:100%; padding:16px;">SEND MESSAGE →</button>
+<p style="font-size:10px; color:#555; margin-top:12px; text-align:center;">Advanced DOM manipulation + animations</p>
+</div>
+</div>
+
+<div id="toast">MESSAGE SENT ✓</div>
+<div id="lightbox" class="lightbox-overlay"><button class="lightbox-close" onclick="document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow='';">×</button><img id="lightboxImg" class="lightbox-img" src="" alt=""><div id="lightboxCaption" class="lightbox-caption"></div></div><div id="gameModal" class="modal-overlay"><div class="modal-box"><button class="modal-close" onclick="closeModal('gameModal')">×</button><h2 id="modalTitle">GAME DETAILS</h2><p id="modalDesc" class="lead" style="margin-top:16px;">Loading...</p><div class="btn-group" style="margin-top:24px;"><a href="store.html" class="btn btn-primary">Go to Store</a><button class="btn btn-ghost" onclick="closeModal('gameModal')">Close</button></div></div></div><footer><div class="footer-logo">ROCKSTAR GAMES</div><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="games.html">Games</a><a href="store.html">Store</a><a href="contact.html">Contact</a><a href="changelog.html">Changelog</a><a href="https://www.rockstargames.com" target="_blank">Official</a></div><div class="footer-copy">© 2026 Rockstar Fan Project • Part 3 JavaScript • jQuery + Leaflet + Lightbox</div></footer>
+<!-- External JavaScript Only - Fixed - No typos -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
