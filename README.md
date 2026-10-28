@@ -1,5 +1,6 @@
 # 【entity-Rockstar¦canonical_name=Rockstar】 Games Fan Website - WEDE5020 POE Part 3
 
+
 Student: Aphelele Mahaye
 Location: Durban KZN 4091
 Module: WEDE5020 - Web Development (Intro) - Part 3
