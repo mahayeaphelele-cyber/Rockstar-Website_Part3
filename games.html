@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rockstar | Games - Part 3 Dynamic + Lightbox</title>
+  <meta name="description" content="Rockstar Games fan project by Aphelele Mahaye Durban KZN - GTA V RDR2 Max Payne with YOUR real covers 800x600, lightbox gallery, search filter WEDE5020 Part 3">
+  <meta name="keywords" content="Rockstar Games, GTA V, RDR2, Max Payne, Durban KZN, Aphelele Mahaye, WEDE5020, jQuery, Leaflet, lightbox, 800x600">
+  <meta name="author" content="Aphelele Mahaye">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">ROCKSTAR</a>
+    <label for="nav-toggle" class="hamburger">☰</label>
+    <input type="checkbox" id="nav-toggle">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="store.html">Store <span class="cart-badge" id="cartCount">0</span></a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="changelog.html">Changelog</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero" style="min-height:60vh;">
+  <div class="eyebrow">2.2 Dynamic Content + Search + Lightbox Gallery - YOUR Real Images 800x600</div>
+  <h1>OUR <span>GAMES</span></h1>
+  <p>Search and filter - YOUR real GTA V, RDR2, Max Payne covers 800x600 - Click images for lightbox</p>
+</section>
+
+<section class="section">
+  <div class="search-bar">
+    <input type="text" id="gameSearch" placeholder="Search games... e.g. GTA, Red Dead, Max Payne, Bully, L.A. Noire">
+    <span>🔍</span>
+  </div>
+  <div class="filter-tags">
+    <button class="filter-tag active" data-filter="all">All Games</button>
+    <button class="filter-tag" data-filter="gta">GTA</button>
+    <button class="filter-tag" data-filter="rdr">Red Dead</button>
+    <button class="filter-tag" data-filter="classic">Classics</button>
+  </div>
+
+  <div class="featured" style="padding:0;">
+    <div class="game-container">
+
+      <div class="game-card stagger-item" data-category="gta">
+        <img src="images/grand-theft-auto-v-los-santos-gameplay-800x600.jpg" 
+             alt="Grand Theft Auto V Los Santos gameplay three protagonists Franklin Michael Trevor open world 2013 Rockstar Games Durban KZN 4091 WEDE5020 BESTSELLER" 
+             class="lightbox-trigger" 
+             width="800" height="600">
+        <div class="game-info">
+          <h3>GRAND THEFT AUTO V</h3>
+          <p>Dark cinematic action experience that shaped storytelling. Los Santos & Blaine County - Franklin, Michael, Trevor.</p>
+          <a href="https://www.rockstargames.com/gta-v" target="_blank">LEARN MORE → Official Rockstar</a>
+        </div>
+      </div>
+
+      <div class="game-card stagger-item" data-category="rdr">
+        <img src="images/red-dead-redemption-2-arthur-morgan-american-frontier-800x600.jpg" 
+             alt="Red Dead Redemption 2 unforgettable journey American frontier 1899 Arthur Morgan Van der Linde gang honor loyalty survival wild west Rockstar Games NEW ERA" 
+             class="lightbox-trigger" 
+             width="800" height="600">
+        <div class="game-info">
+          <h3>RED DEAD REDEMPTION 2</h3>
+          <p>Unforgettable journey through American frontier 1899 - Arthur Morgan, Van der Linde gang final days.</p>
+          <a href="https://www.rockstargames.com/reddeadredemption2" target="_blank">LEARN MORE → Official Rockstar</a>
+        </div>
+      </div>
+
+      <div class="game-card stagger-item" data-category="classic">
+        <img src="images/max-payne-remake-rockstar-presents-ps5-xbox-800x600.jpg" 
+             alt="Max Payne Remake Rockstar Games presents jaw-dropping action packed dynasty bullet-time noir PS5 Xbox Series PC COMING SOON" 
+             class="lightbox-trigger" 
+             width="800" height="600">
+        <div class="game-info">
+          <h3>MAX PAYNE REMAKE</h3>
+          <p>Jaw-dropping action-packed dynasty - bullet-time vengeance returns - NYPD detective noir 2001 remake 2025.</p>
+          <a href="https://www.rockstargames.com/games/maxpayne" target="_blank">LEARN MORE → Official Rockstar</a>
+        </div>
+      </div>
+
+      <div class="game-card stagger-item" data-category="gta">
+        <img src="images/grand-theft-auto-v-los-santos-gameplay-800x600.jpg" 
+             alt="Grand Theft Auto Online living online world heists businesses Vice City returns GTA VI Rockstar Games fan project Durban KZN 4091" 
+             class="lightbox-trigger" 
+             width="800" height="600">
+        <div class="game-info">
+          <h3>GTA ONLINE</h3>
+          <p>Living online world - heists, businesses, chaos - evolves constantly.</p>
+          <a href="https://www.rockstargames.com/gta-online" target="_blank">LEARN MORE →</a>
+        </div>
+      </div>
+
+      <div class="game-card stagger-item" data-category="classic">
+        <img src="images/max-payne-remake-rockstar-presents-ps5-xbox-800x600.jpg" 
+             alt="Bully Bullworth Academy Jimmy Hopkins school ranks Rockstar Games Classics" 
+             class="lightbox-trigger" 
+             width="800" height="600">
+        <div class="game-info">
+          <h3>BULLY</h3>
+          <p>Welcome to Bullworth Academy — the story of Jimmy Hopkins and his rise through the school ranks.</p>
+          <a href="https://www.rockstargames.com/bully" target="_blank">LEARN MORE →</a>
+        </div>
+      </div>
+
+      <div class="game-card stagger-item" data-category="classic">
+        <img src="images/grand-theft-auto-v-los-santos-gameplay-800x600.jpg" 
+             alt="L.A. Noire 1947 Los Angeles city glamour crime detective Cole Phelps Rockstar Games" 
+             class="lightbox-trigger" 
+             width="800" height="600">
+        <div class="game-info">
+          <h3>L.A. NOIRE</h3>
+          <p>1947 Los Angeles — a city of glamour and crime. Solve brutal cases as detective Cole Phelps.</p>
+          <a href="https://www.rockstargames.com/lanoire" target="_blank">LEARN MORE →</a>
+        </div>
+      </div>
+
+    </div>
+    <div id="noGamesResults" class="no-results">
+      <h3>No games found</h3>
+      <p>Try search: GTA, Red Dead, Max, Bully, L.A.</p>
+    </div>
+  </div>
+</section>
+
+<div id="lightbox" class="lightbox-overlay">
+  <button class="lightbox-close" onclick="document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow='';">×</button>
+  <img id="lightboxImg" class="lightbox-img" src="" alt="">
+  <div id="lightboxCaption" class="lightbox-caption"></div>
+</div>
+
+<div id="gameModal" class="modal-overlay">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('gameModal')">×</button>
+    <h2 id="modalTitle">GAME DETAILS</h2>
+    <p id="modalDesc" class="lead" style="margin-top:16px;">Loading...</p>
+    <div class="btn-group" style="margin-top:24px;">
+      <a id="modalOfficialLink" href="https://www.rockstargames.com" target="_blank" class="btn btn-primary">View on RockstarGames.com</a>
+      <button class="btn btn-ghost" onclick="closeModal('gameModal')">Close</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">ROCKSTAR GAMES</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="games.html">Games</a><a href="store.html">Store</a><a href="contact.html">Contact</a><a href="changelog.html">Changelog</a><a href="https://www.rockstargames.com" target="_blank">Official</a>
+  </div>
+  <div class="footer-copy">© 2026 Rockstar Fan Project • Part 3 JavaScript • jQuery + Leaflet + Lightbox • YOUR Real Images 800x600 • Aphelele Mahaye Durban KZN 4091</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
